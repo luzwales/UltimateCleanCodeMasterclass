@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿VacationPlanner planner = new VacationPlanner();
+
+int vacationDaysToUse = 5;
+
+var optimalVacation = planner.FindOptimalVacation(vacationDaysToUse, 2025);
+planner.ShowReport(optimalVacation, vacationDaysToUse);
+
+Console.ReadKey();
