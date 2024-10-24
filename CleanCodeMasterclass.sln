@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Examples.csproj", "{54F49E33-8018-4C54-AF9D-076EBA8868FD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{0A46F020-B61A-423B-A8C9-AC87D19435E9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesDesignAndFormatting", "ClassesDesignAndFormatting\ClassesDesignAndFormatting.csproj", "{83A737E4-9D7E-431B-9400-632997D25E0C}"
@@ -25,17 +23,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticMethods", "StaticMeth
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesDesignAndFormatting_RefactoringCaseStudy_After", "ClassesDesignAndFormatting_RefactoringCaseStudy_After\ClassesDesignAndFormatting_RefactoringCaseStudy_After.csproj", "{DC97E574-320D-4B68-94AA-59BE9AF07C85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFormatting", "CodeFormatting\CodeFormatting.csproj", "{48588E31-F158-4938-9EC6-CC907C27625F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeFormatting", "CodeFormatting\CodeFormatting.csproj", "{48588E31-F158-4938-9EC6-CC907C27625F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naming", "Naming\Naming.csproj", "{FE89D43C-A53E-4618-A575-BDD98F448C11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Naming", "Naming\Naming.csproj", "{FE89D43C-A53E-4618-A575-BDD98F448C11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naming_RefactoringCaseStudy_Before", "Naming_RefactoringCaseStudy_Before\Naming_RefactoringCaseStudy_Before.csproj", "{63D88D6A-D452-4F29-87CC-78045BE3E785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Naming_RefactoringCaseStudy_Before", "Naming_RefactoringCaseStudy_Before\Naming_RefactoringCaseStudy_Before.csproj", "{63D88D6A-D452-4F29-87CC-78045BE3E785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naming_RefactoringCaseStudy_After", "Naming_RefactoringCaseStudy_After\Naming_RefactoringCaseStudy_After.csproj", "{294EE0DA-D4D1-4C02-8030-99B021A16D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Naming_RefactoringCaseStudy_After", "Naming_RefactoringCaseStudy_After\Naming_RefactoringCaseStudy_After.csproj", "{294EE0DA-D4D1-4C02-8030-99B021A16D35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFormatting_RefactoringCaseStudy_Before", "CodeFormatting_RefactoringCaseStudy_Before\CodeFormatting_RefactoringCaseStudy_Before.csproj", "{8A976874-F606-4DBF-A034-0A4CCAAAA657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeFormatting_RefactoringCaseStudy_Before", "CodeFormatting_RefactoringCaseStudy_Before\CodeFormatting_RefactoringCaseStudy_Before.csproj", "{8A976874-F606-4DBF-A034-0A4CCAAAA657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFormatting_RefactoringCaseStudy_After", "CodeFormatting_RefactoringCaseStudy_After\CodeFormatting_RefactoringCaseStudy_After.csproj", "{3E560845-15D2-4FB0-B510-46E3C15F7089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeFormatting_RefactoringCaseStudy_After", "CodeFormatting_RefactoringCaseStudy_After\CodeFormatting_RefactoringCaseStudy_After.csproj", "{3E560845-15D2-4FB0-B510-46E3C15F7089}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanTestsAndTestability", "CleanTestsAndTestability\CleanTestsAndTestability.csproj", "{AD8EED4F-157E-4D50-95A8-FE63E1D5F161}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanTestsAndTestability_RefactoringCaseStudy_Before", "CleanTestsAndTestability_RefactoringCaseStudy_Before\CleanTestsAndTestability_RefactoringCaseStudy_Before.csproj", "{9B55EF4C-23F9-4EF4-8885-F69A70A0CCA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanTestsAndTestability_RefactoringCaseStudy_After", "CleanTestsAndTestability_RefactoringCaseStudy_After\CleanTestsAndTestability_RefactoringCaseStudy_After.csproj", "{91BFFE98-7C06-434D-A8D9-C0C18952D5DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{89ACFB73-5894-43A4-842D-54DD59ABA843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_RefactoringCaseStudy_SaveToFile_Before", "Functions_RefactoringCaseStudy_SaveToFile_Before\Functions_RefactoringCaseStudy_SaveToFile_Before.csproj", "{0BFEF1D1-FDF9-4CF4-A07D-377F0B642114}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_RefactoringCaseStudy_SaveToFile_After", "Functions_RefactoringCaseStudy_SaveToFile_After\Functions_RefactoringCaseStudy_SaveToFile_After.csproj", "{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +53,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{54F49E33-8018-4C54-AF9D-076EBA8868FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54F49E33-8018-4C54-AF9D-076EBA8868FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54F49E33-8018-4C54-AF9D-076EBA8868FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54F49E33-8018-4C54-AF9D-076EBA8868FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A46F020-B61A-423B-A8C9-AC87D19435E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0A46F020-B61A-423B-A8C9-AC87D19435E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A46F020-B61A-423B-A8C9-AC87D19435E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -111,6 +117,30 @@ Global
 		{3E560845-15D2-4FB0-B510-46E3C15F7089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E560845-15D2-4FB0-B510-46E3C15F7089}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E560845-15D2-4FB0-B510-46E3C15F7089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8EED4F-157E-4D50-95A8-FE63E1D5F161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8EED4F-157E-4D50-95A8-FE63E1D5F161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8EED4F-157E-4D50-95A8-FE63E1D5F161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8EED4F-157E-4D50-95A8-FE63E1D5F161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B55EF4C-23F9-4EF4-8885-F69A70A0CCA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B55EF4C-23F9-4EF4-8885-F69A70A0CCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B55EF4C-23F9-4EF4-8885-F69A70A0CCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B55EF4C-23F9-4EF4-8885-F69A70A0CCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91BFFE98-7C06-434D-A8D9-C0C18952D5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BFFE98-7C06-434D-A8D9-C0C18952D5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91BFFE98-7C06-434D-A8D9-C0C18952D5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91BFFE98-7C06-434D-A8D9-C0C18952D5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89ACFB73-5894-43A4-842D-54DD59ABA843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89ACFB73-5894-43A4-842D-54DD59ABA843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89ACFB73-5894-43A4-842D-54DD59ABA843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89ACFB73-5894-43A4-842D-54DD59ABA843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFEF1D1-FDF9-4CF4-A07D-377F0B642114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFEF1D1-FDF9-4CF4-A07D-377F0B642114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFEF1D1-FDF9-4CF4-A07D-377F0B642114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFEF1D1-FDF9-4CF4-A07D-377F0B642114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
