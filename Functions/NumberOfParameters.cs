@@ -65,6 +65,45 @@
         public string UserName;
         public string Password;
     }
+
+    //poor design - this method does two things instead of one
+    double CalculateDistance(
+        Point point1, Point point2, bool shouldBeAsMiles)
+    {
+        double deltaX = point2.X - point1.X;
+        double deltaY = point2.Y - point1.Y;
+
+        var distanceInKm = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+
+        if (shouldBeAsMiles)
+        {
+            const double kilometersToMilesConversionFactor = 0.621371;
+            return distanceInKm * kilometersToMilesConversionFactor;
+        }
+        return distanceInKm;
+    }
+
+    //better design - two seaprate methods, no need for a boolean parameter
+    double CalculateDistanceInKilometers(
+        Point point1, Point point2)
+    {
+        double deltaX = point2.X - point1.X;
+        double deltaY = point2.Y - point1.Y;
+
+        return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+    }
+
+    HashSet<string> _authorizedUsers = new HashSet<string> { "user1", "user2" };
+
+    //reasonable usage of boolean parameter
+    bool IsAuthorized(string userName, bool isAdmin)
+    {
+        if (isAdmin)
+        {
+            return true;
+        }
+        return _authorizedUsers.Contains(userName);
+    }
 }
 
 public struct Circle_TooManyParams

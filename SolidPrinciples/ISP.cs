@@ -1,5 +1,4 @@
-﻿
-public interface IPersonalDataReader
+﻿public interface IPersonalDataReader
 {
     string Read(int id);
 }

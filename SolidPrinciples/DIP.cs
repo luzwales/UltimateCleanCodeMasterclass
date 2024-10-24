@@ -1,12 +1,12 @@
-﻿var populationStatsPrinter = new PopulationStatsPrinter(
-    new TextFilePopulationDataProvider("people.txt"));
-populationStatsPrinter.PrintAverageAge();
+﻿//var populationStatsPrinter = new PopulationStatsPrinter(
+//    new TextFilePopulationDataProvider("people.txt"));
+//populationStatsPrinter.PrintAverageAge();
 
-var weatherDataPrinter = new WeatherDataPrinter(
-    new WeatherDataAccessFactory());
-weatherDataPrinter.Print();
+//var weatherDataPrinter = new WeatherDataPrinter(
+//    new WeatherDataAccessFactory());
+//weatherDataPrinter.Print();
 
-Console.ReadKey();
+//Console.ReadKey();
 
 public class PopulationStatsPrinter
 {

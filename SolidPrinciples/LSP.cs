@@ -1,6 +1,5 @@
-﻿
-//#####################################################
-//LSP - Violating base type interface - before refactor
+﻿//#####################################################
+//LSP - Violating base type interface - before refactoring
 
 //Plane plane = new ToyPlane();
 
@@ -9,105 +8,49 @@
 
 //Console.ReadKey();
 
-//public abstract class Plane
-//{
-//    public virtual int MaxFuel => 1000;
-//    public virtual int RemainingFuel => 1000;
+public abstract class Plane
+{
+    public virtual int MaxFuel => 1000;
+    public virtual int RemainingFuel => 1000;
 
-//    public float PercentOfRemainingFuel()
-//    {
-//        return ((float)RemainingFuel / MaxFuel) * 100;
-//    }
+    public float PercentOfRemainingFuel()
+    {
+        return ((float)RemainingFuel / MaxFuel) * 100;
+    }
 
-//    public abstract string Land();
-//}
+    public abstract string Land();
+}
 
-//public class CargoPlane : Plane
-//{
-//    public override int MaxFuel => 2000;
-//    public override int RemainingFuel => 2000;
+public class CargoPlane : Plane
+{
+    public override int MaxFuel => 2000;
+    public override int RemainingFuel => 2000;
 
-//    public override string Land()
-//    {
-//        return "Land on the airstrip near the cargo terminal";
-//    }
-//}
+    public override string Land()
+    {
+        return "Land on the airstrip near the cargo terminal";
+    }
+}
 
-//public class ToyPlane : Plane
-//{
-//    public override int MaxFuel => 0;
-//    public override int RemainingFuel => 0;
+public class ToyPlane : Plane
+{
+    public override int MaxFuel => 0;
+    public override int RemainingFuel => 0;
 
-//    public override string Land()
-//    {
-//        return "Just don't hit the floor too hard.";
-//    }
-//}
+    public override string Land()
+    {
+        return "Just don't hit the floor too hard.";
+    }
+}
 
 //#####################################################
-//LSP - Violating base type interface - after refactor
+//LSP - Violating base type interface - after refactoring
 
 //IFuelable fuelable = new CargoPlane();
 
 //var fuelCalculator = new FuelCalculator();
 //var remainingFuel = fuelCalculator.GetPercentOfRemainingFuel(fuelable);
 //Console.WriteLine(remainingFuel);
-
-//Console.ReadKey();
-
-//public interface IFuelable
-//{
-//    int MaxFuel { get; }
-//    int RemainingFuel { get; }
-//}
-
-//public abstract class Plane
-//{
-//    public abstract string Land();
-//}
-
-//public class CargoPlane : Plane, IFuelable
-//{
-//    public int MaxFuel => 2000;
-//    public int RemainingFuel => 2000;
-
-//    public override string Land()
-//    {
-//        return "Land on the airstrip near the cargo terminal";
-//    }
-//}
-
-//public class AcrobaticPlane : Plane, IFuelable
-//{
-//    public int MaxFuel => 200;
-//    public int RemainingFuel => 200;
-
-//    public override string Land()
-//    {
-//        return "Land in fashion.";
-//    }
-//}
-
-//public class FuelCalculator
-//{
-//    public float GetPercentOfRemainingFuel(IFuelable fuelable)
-//    {
-//        return ((float)fuelable.RemainingFuel / fuelable.MaxFuel) * 100;
-//    }
-//}
-
-//public class ToyPlane : Plane
-//{
-//    public override string Land()
-//    {
-//        return "Just don't hit the floor too hard.";
-//    }
-//}//IFuelable fuelable = new CargoPlane();
-
-//var fuelCalculator = new FuelCalculator();
-//var remainingFuel = fuelCalculator.GetPercentOfRemainingFuel(fuelable);
-//Console.WriteLine(remainingFuel);
-
 //Console.ReadKey();
 
 //public interface IFuelable
@@ -162,8 +105,10 @@
 
 
 
-//#####################################################
-//LSP - Runtime Type Switching - before refactor
+
+
+////#####################################################
+////LSP - Runtime Type Switching - before refactoring
 
 //void FuelAll(List<IFuelable> fuelables, FuelHose hose)
 //{
@@ -184,49 +129,48 @@
 //    }
 //}
 
+public interface IFuelable
+{
+    int MaxFuel { get; }
+    int RemainingFuel { get; }
 
-//public interface IFuelable
-//{
-//    int MaxFuel { get; }
-//    int RemainingFuel { get; }
+    void Attach(FuelHose hose);
+}
 
-//    void Attach(FuelHose hose);
-//}
+public class FuelHose
+{
+    public void Fuel(IFuelable fuelable)
+    {
+        //fuel the fuelable
+    }
+}
 
-//public class FuelHose
-//{
-//    public void Fuel(IFuelable fuelable)
-//    {
-//        //fuel the fuelable
-//    }
-//}
+public class KeroseneLamp : IFuelable
+{
+    public int MaxFuel => 3;
+    public int RemainingFuel => 3;
 
-//public class KeroseneLamp : IFuelable
-//{
-//    public int MaxFuel => 3;
-//    public int RemainingFuel => 3;
+    public void Attach(FuelHose hose)
+    {
+        throw new InvalidOperationException(
+            "Can't attach fuel hose");
+    }
+}
 
-//    public void Attach(FuelHose hose)
-//    {
-//        throw new InvalidOperationException(
-//            "Can't attach fuel hose");
-//    }
-//}
+public class HoseAdapter
+{
+    private KeroseneLamp _lamp;
 
-//public class HoseAdapter
-//{
-//    private KeroseneLamp _lamp;
+    public HoseAdapter(KeroseneLamp? lamp)
+    {
+        _lamp = lamp;
+    }
 
-//    public HoseAdapter(KeroseneLamp? lamp)
-//    {
-//        _lamp = lamp;
-//    }
-
-//    public void Attach(FuelHose hose)
-//    {
-//        //attach hose to the adapter
-//    }
-//}
+    public void Attach(FuelHose hose)
+    {
+        //attach hose to the adapter
+    }
+}
 
 ////#####################################################
 ////LSP - Runtime Type Switching - refactor 1 (KeroseneLamp is fuelable)
@@ -324,47 +268,47 @@
 
 
 
-//#####################################################
-//LSP - Runtime Type Switching - before refactor
+////#####################################################
+////LSP - Runtime Type Switching - before refactor
 
-//public class BankAccount
-//{
-//    public virtual void Withdraw(int amount)
-//    {
-//        if (amount < 10000)
-//        {
-//            Console.WriteLine($"Withdrawing amount:{amount}");
-//            //perform withdrawal
-//        }
-//        else
-//        {
-//            Console.WriteLine(
-//                $"Withdrawing {amount} requires extra authorization");
-//            //do not perform withdrawal
-//        }
-//    }
-//}
+public class BankAccount
+{
+    public virtual void Withdraw(int amount)
+    {
+        if (amount < 10000)
+        {
+            Console.WriteLine($"Withdrawing amount:{amount}");
+            //perform withdrawal
+        }
+        else
+        {
+            Console.WriteLine(
+                $"Withdrawing {amount} requires extra authorization");
+            //do not perform withdrawal
+        }
+    }
+}
 
-//public class ChildrenAccount : BankAccount
-//{
-//    public override void Withdraw(int amount)
-//    {
-//        if (amount < 1000)
-//        {
-//            Console.WriteLine($"Withdrawing amount:{amount}");
-//            //perform withdrawal
-//        }
-//        else
-//        {
-//            Console.WriteLine(
-//                $"Withdrawing {amount} requires extra authorization");
-//            //do not perform withdrawal
-//        }
-//    }
-//}
+public class ChildrenAccount : BankAccount
+{
+    public override void Withdraw(int amount)
+    {
+        if (amount < 1000)
+        {
+            Console.WriteLine($"Withdrawing amount:{amount}");
+            //perform withdrawal
+        }
+        else
+        {
+            Console.WriteLine(
+                $"Withdrawing {amount} requires extra authorization");
+            //do not perform withdrawal
+        }
+    }
+}
 
-//#####################################################
-//LSP - Runtime Type Switching - after refactor
+////#####################################################
+////LSP - Runtime Type Switching - after refactor
 
 //public enum BankAccountType
 //{

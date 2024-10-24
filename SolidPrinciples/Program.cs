@@ -1,14 +1,4 @@
-﻿//int CalculateSumOfEvens(int n)
-//{
-//    int sum = 0;
-//    for (int i = 2; i <= n; i += 2)
-//    {
-//        sum += i;
-//    }
-//    return sum;
-//}
+﻿//you can use this file to try out any code you want
+Console.WriteLine("Press any key to close.");
+Console.ReadKey();
 
-//int CalculateSumOfEvens(int N)
-//{
-//    return Enumerable.Range(2, N - 1).Where(x => x % 2 == 0).Sum();
-//}

@@ -1,9 +1,13 @@
-﻿
-Console.WriteLine("Are all of 1,2,3,4 even:");
+﻿Console.WriteLine("Are all of 1,2,3,4 even:");
 Console.WriteLine(AreAllEven(new List<int> { 1, 2, 3, 4 }));
                                             //empty line to separate those two method calls
 Console.WriteLine("Are all of 2,4,6,8 even:");
 Console.WriteLine(AreAllEven(new List<int> { 2, 4, 6, 8 }));
+
+//you can use this file to try out any code you want
+Console.WriteLine("Press any key to close.");
+Console.ReadKey();
+
 
 Console.ReadKey();
 

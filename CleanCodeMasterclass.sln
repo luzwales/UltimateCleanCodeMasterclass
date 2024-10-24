@@ -47,6 +47,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_RefactoringCaseSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_RefactoringCaseStudy_SaveToFile_After", "Functions_RefactoringCaseStudy_SaveToFile_After\Functions_RefactoringCaseStudy_SaveToFile_After.csproj", "{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_RefactoringCaseStudy_IdExistanceChecker_After", "Functions_RefactoringCaseStudy_IdExistanceChecker_After\Functions_RefactoringCaseStudy_IdExistanceChecker_After.csproj", "{3D33C2C5-7EB6-4A9E-A1E1-ADC736C98D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions_RefactoringCaseStudy_IdExistanceChecker_Before", "Functions_RefactoringCaseStudy_IdExistanceChecker_Before\Functions_RefactoringCaseStudy_IdExistanceChecker_Before.csproj", "{4C8913BB-88D7-4FDC-ADF1-74D1218DAE61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesInheritance", "CompositionOverInheritance\ClassesInheritance.csproj", "{F442BF32-75FC-4C64-94F9-380D3E871D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comments", "Comments\Comments.csproj", "{66F70186-E7B1-4DCC-89B1-D9BA6227D3CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +149,22 @@ Global
 		{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0A9A55A-68BE-45FF-BE6E-196D17E78ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D33C2C5-7EB6-4A9E-A1E1-ADC736C98D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D33C2C5-7EB6-4A9E-A1E1-ADC736C98D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D33C2C5-7EB6-4A9E-A1E1-ADC736C98D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D33C2C5-7EB6-4A9E-A1E1-ADC736C98D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8913BB-88D7-4FDC-ADF1-74D1218DAE61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8913BB-88D7-4FDC-ADF1-74D1218DAE61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8913BB-88D7-4FDC-ADF1-74D1218DAE61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8913BB-88D7-4FDC-ADF1-74D1218DAE61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F442BF32-75FC-4C64-94F9-380D3E871D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F442BF32-75FC-4C64-94F9-380D3E871D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F442BF32-75FC-4C64-94F9-380D3E871D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F442BF32-75FC-4C64-94F9-380D3E871D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F70186-E7B1-4DCC-89B1-D9BA6227D3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F70186-E7B1-4DCC-89B1-D9BA6227D3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F70186-E7B1-4DCC-89B1-D9BA6227D3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F70186-E7B1-4DCC-89B1-D9BA6227D3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

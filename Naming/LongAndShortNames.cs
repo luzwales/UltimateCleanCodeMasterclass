@@ -1,6 +1,4 @@
-﻿using System.Net;
-
-class LongAndShortNames
+﻿class LongAndShortNames
 {
     public void Example(List<Person> people)
     {
