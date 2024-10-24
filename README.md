@@ -1,10 +1,11 @@
-# UltimateCleanCodeMasterclass
+# Ultimate Clean Code Masterclass
 
 Hello! 
 
 My name is Krystyna. Welcome to my GitHub.
 
-This repository is part of my  **"Ultimate Clean Code Masterclass"** course, which you can find under this link: ADD LINK
+This repository is part of my  **"Ultimate Clean Code Masterclass"** course, which you can find under this link: 
+https://www.udemy.com/course/draft/5977866/?referralCode=2174BA90C2318C8EF68F
 
 ## FAQ:
 
