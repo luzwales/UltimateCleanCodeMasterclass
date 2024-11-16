@@ -81,7 +81,7 @@ public class Developer : Employee
     public override string GenerateReport()
     {
         return
-            base.GenerateReport() +
+            base.GenerateReport().TrimEnd('.') +
             $" and fixed {BugsFixed} bugs.";
     }
 }
