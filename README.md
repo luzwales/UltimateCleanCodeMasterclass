@@ -6,7 +6,8 @@ My name is Krystyna. Welcome to my GitHub.
 
 This repository is part of my  **"Ultimate Clean Code Masterclass"** course, which you can find under this link: 
 [https://www.udemy.com/course/draft/5977866/?referralCode=2174BA90C2318C8EF68F](https://www.udemy.com/course/ultimate-clean-code-masterclass/?referralCode=2174BA90C2318C8EF68F)
-[[[https://www.udemy.com/course/draft/5977866/?referralCode=2174BA90C2318C8EF68F](https://www.bilibili.com/video/BV1UpRCYEE9J?spm_id_from=333.788.player.switch&vd_source=04a7aa99a1c248ac3ec2acf2894b3521)](https://www.bilibili.com/video/BV1UpRCYEE9J?spm_id_from=333.788.player.switch&vd_source=04a7aa99a1c248ac3ec2acf2894b3521)
+
+[Bilibili](https://www.bilibili.com/video/BV1UpRCYEE9J?spm_id_from=333.788.player.switch&vd_source=04a7aa99a1c248ac3ec2acf2894b3521)](https://www.bilibili.com/video/BV1UpRCYEE9J?spm_id_from=333.788.player.switch&vd_source=04a7aa99a1c248ac3ec2acf2894b3521)
 
 ## FAQ:
 
